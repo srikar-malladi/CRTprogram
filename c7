@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    float avg=65.123456987;
+    printf("\n Average: %3f",avg);
+    printf("      GITAM\'S UNIVERSITY");
+    printf("   \"hello world\"    ");
+    
+}
