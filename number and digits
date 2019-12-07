@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+   int a ;
+   printf("\n Enter a  : ");
+   scanf("%d",&a );
+   if( a>= 0 && a<10)
+     printf("\n %d is one digit ",a );
+    else if ( a<=99 )
+     printf("\n %d  is 2 digit ",a);
+    else if ( a<=999)
+     printf("\n %d is 3 digits",a);
+    else
+     printf("\n %d is 4 digits",a); 
+}

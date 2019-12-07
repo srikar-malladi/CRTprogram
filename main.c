@@ -1,14 +1,16 @@
 #include<stdio.h>
-main()
+ int main()
 {
-	int m,p,c,tot;
-	float avg;
-	printf("\n enter m");
-	printf("\n enter p");
-	printf("\n enter c");
-	scanf("%d%d%d",&m,&p,&c);
-	tot = m+p+c;
-	avg =(float) tot/3;
-	printf("\n total marks are = %d",tot);
-	printf("\n average marks are = %f",avg);
+  int n,r,sum=0 ;
+  printf("\n enter n value  ");
+  scanf("%d",&n);
+ 
+  while(n>0)
+   {
+       r=n%10;
+       sum=sum+r;
+       n=n/10;
+   }
+    printf("\n sum of digits : %d  ",sum);
 }
+ 
