@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,sum=0;
+    printf("\n enter a number ");
+    scanf("%d",&n);
+     printf("\n factors of %d are",n);
+    for(i=1;i<n;i++)
+    {
+        if(n%i==0)
+        printf("\n%d",i);
+        sum=sum+i;
+    }
+    if(sum==n)
+        printf("\n is a perfect no");
+    else
+        printf("\n is not a perfect no");
+}

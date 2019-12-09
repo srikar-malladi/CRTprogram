@@ -1,16 +1,19 @@
 #include<stdio.h>
- int main()
+int main()
 {
-  int n,r,sum=0 ;
-  printf("\n enter n value  ");
-  scanf("%d",&n);
- 
-  while(n>0)
-   {
-       r=n%10;
-       sum=sum+r;
-       n=n/10;
-   }
-    printf("\n sum of digits : %d  ",sum);
+    int i,j,k,n,count;
+    printf("\n enter n value : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        count=0;
+        for(j=i,k=1;k<=j;k++)
+        {
+            if(j%k==0)
+            count++;
+        }
+        if(count==2)
+        printf("\n%d",j);
+    }
+    
 }
- 

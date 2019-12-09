@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int pid,qty,count=0;
+    char pname[20],ch;
+    float price,amount,tamount=0;
+    while(ch=='y'|| ch=='Y')
+    {
+        printf("\n enter the product id : ");
+        scanf("%d",&pid);
+        printf("\n eter the product name : ");
+        scanf("%c",&pname);
+        printf("\n enter price : ");
+        scanf("%f" ,&price);
+        printf("\n enter the quantity : ");
+        scanf("%d",&qty);
+        amount = qty * price;
+        tamunt+ = amount;
+        count++;
+        printf("\n do u wish to continue ? (y/n)");
+        //ch getche();
+        fflush(stdin);
+        scanf("%c",&ch);
+    }
+    printf("\n the no of items %d",count);
+    printf("\n the total amount is %f",tamount)
+}
